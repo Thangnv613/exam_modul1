@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nghiem(a,b) {
+        if( a === 0){
+            document.write( `Phương trình vô nghiệm.`)
+        }
+        else {
+            if(b === 0){
+                document.write('Phương trình vô số nghiệm.')
+            }
+            else {
+                x = -b / a
+                return x;}
+        }
+    }
+    let a = parseInt(prompt(' Mời nhập tham số thứ 1.'))
+    let b = parseInt(prompt(' Mời nhập tham số thứ 2.'))
+    nghiem(a,b)
+    document.write(`Phương trình bậc nhất ${a}x + ${b} = 0 có nghiệm là: ${x}`)
+</script>
+</body>
+</html>

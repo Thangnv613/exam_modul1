@@ -6,17 +6,20 @@
 </head>
 <body>
 <script>
+
     function checkValue(arr,id) {
+        let position = []
         for (let i = 0; i < arr.length; i++) {
             if (id == arr[i]) {
-                document.write(`<br>Giá trị ${id} nằm ở vị trí ${i} trong mảng.`)
+                position.push(i)
             }
         }
+        document.write(`<br>Giá trị ${id} nằm ở vị trí ${position} trong mảng.`)
     }
 
-    document.write(`Mảng cho sẵn là : [2,3,5,7,8,1]`)
+    document.write(`Mảng cho sẵn là : [2,3,5,7,8,1,2,4,3,6,8]`)
 
-    let arr = [2,3,5,7,8,1]
+    let arr = [2,3,5,7,8,1,2,4,3,6,8]
 
     let id = prompt(' Mời nhập giá trị cần tìm.')
 
